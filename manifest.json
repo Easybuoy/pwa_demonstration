@@ -1,0 +1,23 @@
+{
+  "name": "Photo Library",
+  "short_name": "PL",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "theme_color": "#000300",
+  "background_color": "#EEE",
+  "icons": [
+    {
+      "src": "/assets/icon-310x310.png",
+      "sizes": "310x310",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/icon-152x152.png",
+      "sizes": "152x152",
+      "type": "image/png"
+    }
+  ],
+  "version": "0.0.1",
+  "dependencies": {}
+}

@@ -1,5 +1,19 @@
-var CACHE_NAME = "my-site-cache-v2";
-var urlsToCache = [ "assets/photo-1.jpeg"];
+var CACHE_NAME = "my-site-cache-v1";
+var urlsToCache = [
+  "./",
+  "./index.html",
+  "./manifest.json",
+  "./style.css",
+  "./main.js",
+  "https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap",
+  "./assets/favicon.png",
+  "./assets/icon-152x152.png",
+  "./assets/icon-310x310.png",
+  "./assets/photo-1.jpeg",
+  "./assets/photo-2.jpeg",
+  "./assets/photo-3.jpeg",
+  "./assets/photo-4.jpeg",
+];
 
 self.addEventListener("install", function (event) {
   // Perform install steps
@@ -21,7 +35,6 @@ self.addEventListener("activate", function (e) {
 });
 
 self.addEventListener("fetch", function (event) {
-  console.log(event.request.url, "eeevs");
   event.respondWith(
     caches.match(event.request).then(function (response) {
       // Cache hit - return response
