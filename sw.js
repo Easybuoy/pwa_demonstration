@@ -9,10 +9,6 @@ var urlsToCache = [
   "./assets/favicon.png",
   "./assets/icon-152x152.png",
   "./assets/icon-310x310.png",
-  "./assets/photo-1.jpeg",
-  "./assets/photo-2.jpeg",
-  "./assets/photo-3.jpeg",
-  "./assets/photo-4.jpeg",
 ];
 
 self.addEventListener("install", function (event) {
